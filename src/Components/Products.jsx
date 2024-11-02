@@ -11,7 +11,7 @@ const Products = () => {
     }, [])
     return (
         <div>
-            <h2 className="text-4xl text-center font-bold py-4">Books : ( {books.length} )</h2>
+            <h2 className="text-4xl text-center font-bold py-4mc">Books : ( {books.length} )</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 mt-12">
         {books.map( p => <Book book = {p} key={books.id }></Book> )}
         </div>

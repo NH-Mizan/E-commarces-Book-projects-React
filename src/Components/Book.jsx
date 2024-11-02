@@ -16,11 +16,13 @@ const Book = ({ book }) => {
                 <div className="card-body">
                     <div className='grid grid-cols-2 my-4'>
                         {
-                            tags.map(tag => <button className="border-2 rounded-2xl btn-outline btn-accent w-28">{tag}</button>)
+                            tags.map((tag, index) => <button key={index} className="border-2 rounded-2xl btn-outline btn-accent w-28">{tag}</button>)
                         }
 
                     </div>
+                    <div className='h-20'>
                     <h2 className="card-title text-2xl font-bold">{bookName}</h2>
+                    </div>
                     <p className=' text-xl'>By: {author}</p>
                     <div className="card-actions justify-between mt-4 border-t-4 border-dashed p-2">
                         <h2 className="font-bold">{category}</h2>
